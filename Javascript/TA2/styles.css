@@ -1,0 +1,17 @@
+body{
+  background-color: rgb(54, 125, 247);
+}
+p {
+  font-size: 40px;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+div {
+  font-size: 80px;
+  text-align: center;
+}
+
+button{
+  font-size: 18px;
+}
