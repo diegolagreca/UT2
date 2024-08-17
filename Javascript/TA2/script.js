@@ -1,15 +1,14 @@
-function revertir(str) {
-  for (let n = 0; n < cantidad; n++) {
-    const para = document.createElement("p");
-    para.textContent = "👮";
-    document.body.appendChild(para);
-  }
-  console.log("Se hizo click en el botón con un valor de " + cantidad)
+function reverseString(texto) {
+  return texto.split('').reverse().join('');
 }
 
-const buttons = document.querySelectorAll("button");
+document.getElementById('reverseButton').addEventListener('click', function () {
+  // Obtener el texto del input e invertirlo
+  const texto = document.getElementById('inputText').value;
+  const textoInvertido = reverseString(texto);
 
-for (const button of buttons) {
-  button.addEventListener("click", createParagraph);
-
-}
+  // Crear un nuevo párrafo y añadir el texto invertido
+  const p = document.createElement('p');
+  p.textContent = textoInvertido;
+  document.body.appendChild(p);
+});
