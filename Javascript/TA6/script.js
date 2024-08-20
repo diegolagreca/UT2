@@ -25,18 +25,16 @@ document.getElementById('convertToCelsius').addEventListener('click', function (
     // Obtener el valor del input
     let degreesF = document.getElementById('fahrenheit').value;
 
-    let parsedDegreesF = isNaN(degreesF) ? b : Number(degreesF);
 
     // Llamada a la función
-    printResult(convertToCelsius(parsedDegreesF));
+    printResult(convertToCelsius(degreesF));
 });
 
 document.getElementById('convertToFahrenheit').addEventListener('click', function () {
     // Obtener el valor del input
     let degreesC = document.getElementById('celcius').value;
 
-    let parsedDegreesC = isNaN(degreesC) ? b : Number(degreesC);
 
     // Llamada a la función
-    printResult(convertToFahrenheit(parsedDegreesC));
+    printResult(convertToFahrenheit(degreesC));
 });

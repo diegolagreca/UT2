@@ -25,8 +25,6 @@ document.getElementById('leapYear').addEventListener('click', function () {
     // Obtener el valor del input
     let year = document.getElementById('year').value;
 
-    let parsedYear = isNaN(year) ? b : Number(year);
-
     // Llamada a la función
-    printResult(leapYears(parsedYear));
+    printResult(leapYears(year));
 });
