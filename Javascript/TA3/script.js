@@ -1,7 +1,8 @@
-// Variable global para mantener el estado del arreglo
+// Variable global para almacenar el estado del arreglo
 let arreglo = [1, 2, 3, 4, 5];
 
 function removeFromArray(arreglo, item) {
+    // Encuentra el índice del item en el arreglo
     const index = arreglo.indexOf(item);
 
     // Si el item se encuentra en el arreglo, se elimina usando splice
@@ -18,7 +19,9 @@ function removeFromArray(arreglo, item) {
 }
 
 document.getElementById('removeButton').addEventListener('click', function() {
+    // Obtener el valor del input
     const item = document.getElementById('inputItem').value;
+    const parsedItem = isNaN(item) ? item : Number(item);
 
     // Llamada a la función con el arreglo global y el item del input
     removeFromArray(arreglo, parsedItem);
