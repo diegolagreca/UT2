@@ -1,0 +1,26 @@
+body{
+  background-color:azure;
+}
+p {
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(255, 0, 0);
+}
+
+div {
+  font-size:18px;
+  text-align: center;
+}
+
+button{
+  font-size: 14px;
+}
+
+#hoverImage {
+  width: 300px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+#hoverImage:hover {
+  transform: scale(1.1);
+}
